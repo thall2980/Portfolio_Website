@@ -37,7 +37,7 @@
   }
 } */
 
-/* .video-responsive {
+.video-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
   position: relative;
@@ -50,7 +50,7 @@
   height: 100%;
   width: 100%;
   position: absolute;
-} */
+}
 
 .projects_container {
   padding-left: 10%;
@@ -61,6 +61,11 @@
   display: flex;
   margin-bottom: 100px;
   text-align: center;
+}
+
+.title_video_container {
+  width: 60%;
+  max-width: 750px;
 }
 
 .project_description {

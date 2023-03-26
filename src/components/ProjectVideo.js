@@ -3,7 +3,7 @@ import React from "react";
 const ProjectVideo = ({ props }) => {
   return (
     <div className="project_container">
-      <div>
+      <div className="title_video_container">
         <h1>{props.title}</h1>
         <div className="video-responsive">
           <iframe
