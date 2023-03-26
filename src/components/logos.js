@@ -7,7 +7,7 @@ const logos = [
 
     {
         id: 11,
-        image: 'logos/ruby_logo.png',
+        image: 'logos/ruby_logo.jpg',
         title: 'Ruby'
     },
     {

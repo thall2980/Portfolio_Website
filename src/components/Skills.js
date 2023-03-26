@@ -3,15 +3,17 @@ import logos from "./logos";
 
 const Skills = () => {
   return (
-    <>
+    <div>
       <div>Skills</div>
-      {logos.map((logo) => (
-        <div key={logo.id}>
-          <img src={logo.image} alt="" />
-          <p>{logo.title}</p>
-        </div>
-      ))}
-    </>
+      <div className="logo_container">
+        {logos.map((logo) => (
+          <div key={logo.id} className="logo_title_container">
+            <p>{logo.title}</p>
+            <img src={logo.image} alt="" className="logo" />
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 

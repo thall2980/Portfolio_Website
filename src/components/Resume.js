@@ -1,9 +1,11 @@
 import React from 'react'
 import { useState } from 'react'
+import { TfiSave } from 'react-icons/tfi';
 // import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
 import 'react-pdf/dist/esm/Page/AnnotationLayer.css'
 import { Document, Page, pdfjs } from "react-pdf";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`
+
 
 
 
@@ -19,7 +21,10 @@ const Resume = () => {
     setNumPages(1)
   }
   return (
-    <div>
+    <div className='resume' >
+      <div style={{textAlign:'center'}}>
+      <a href={file} style={{fontSize: 40, color: "black"}}><TfiSave/></a>
+      </div>
       <Document file ={file} onLoadSuccess={onDocumentLoadSuccess}>
         <Page height="1000" width="1000" pageNumber={pageNumber} renderTextLayer={false} />
       </Document>
