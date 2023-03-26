@@ -78,6 +78,7 @@
 }
 .bullets {
   font-size: 1.2vw;
+  text-align: left;
 }
 
 .description_bullets_container {
