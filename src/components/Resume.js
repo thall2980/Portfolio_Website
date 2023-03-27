@@ -22,7 +22,7 @@ const Resume = () => {
   }
   return (
     <div className='resume' >
-      <div style={{textAlign:'right'}}>
+      <div style={{textAlign:'left'}}>
       <a href={file} style={{fontSize: 40, color: "black"}}><TfiSave/></a>
       </div>
       <Document file ={file} onLoadSuccess={onDocumentLoadSuccess}>
