@@ -60,8 +60,8 @@ console.log(embedIDs);
 const Projects = () => {
   return (
     <div>
-      <h1>Projects</h1>
-      <div className="projects_container">{videoComponent}</div>
+      <h1 className="text-center text-5xl pb-20">Projects</h1>
+      <div className="projects_container overflow-y-auto">{videoComponent}</div>
     </div>
   );
 };

@@ -37,6 +37,8 @@
   }
 } */
 
+
+
 .video-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
@@ -58,8 +60,6 @@
 }
 
 .project_container {
-  display: flex;
-  margin-bottom: 100px;
   text-align: center;
 }
 
@@ -99,7 +99,7 @@
 
 .logo_title_container{
   text-align: center;
-  background-color: white;
+
 }
 
 .logo_container {

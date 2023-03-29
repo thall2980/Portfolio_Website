@@ -4,11 +4,12 @@ import AboutMe from './components/AboutMe';
 import Resume from './components/Resume';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
+import image from "./img/About_Background.jpg";
 import { Route, Routes } from "react-router-dom"
 
 function App() {
   return (
-    <div className="App">
+    <div className=" bg-cover bg-fixed bg-no-repeat text-gray-400"       style={{ backgroundImage: `url(${image})` }}>
       <NavBar/>
       <Routes>
         <Route path="/" element={<AboutMe />} />
