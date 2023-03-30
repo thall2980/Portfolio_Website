@@ -2,29 +2,29 @@ import React from "react";
 
 const ProjectVideo = ({ props }) => {
   return (
-    <div className="project_container  p-10 mb-20 bg-blue-300 rounded">
+    <div className="project_container h-fit overflow-y-auto  p-10 mb-20 bg-blue-300 rounded 2xl:h-[60vh]">
       <h1 className="project_title">{props.title}</h1>
-      <div className="flex flex-row pt-10">
-        <div className="title_video_container">
-          <div className="h-full w-full">
+      <div className="pt-10 justify-center lg:flex flex-row">
+        <div className="h-full lg:w-3/5">
+
             <iframe
-              className="h-full w-full"
-              width="853"
-              height="480"
+              className="min-w-full h-[30vh] lg:h-[40vh] "
+              // width="853"
+              // height="480"
               src={`https://www.youtube.com/embed/${props.embedID}`}
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               title="Embedded youtube"
             />
-          </div>
+
         </div>
-        <div className="description_bullets_container py-20 px-8">
-          <h2 className="project_description">{props.description}</h2>
-          <ul className="bullets px-10 sm: px-0">
-            <li className="bullets pt-10">{props.process[0]}</li>
-            <li className="bullets pt-10">{props.process[1]}</li>
-            <li className="bullets pt-10">{props.process[2]}</li>
+        <div className=" md:mt-4 ml-6 lg:w-3/5">
+          <h2 className="font-bold pb-5 border-b-4 text-2xl md:text-3xl">{props.description}</h2>
+          <ul className="text-lg md:text-2xl ">
+            <li className="pt-10 ">{props.process[0]}</li>
+            <li className="pt-4 ">{props.process[1]}</li>
+            <li className="pt-4 ">{props.process[2]}</li>
           </ul>
         </div>
       </div>
