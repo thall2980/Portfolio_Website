@@ -23,7 +23,7 @@ const Resume = () => {
   return (
     <div className='resume' >
       <div style={{textAlign:'left'}}>
-      <a href={file} style={{fontSize: 40, color: "black"}}><TfiSave/></a>
+      <a href={file} style={{fontSize: 40,}}><TfiSave/></a>
       </div>
       <Document file ={file} onLoadSuccess={onDocumentLoadSuccess}>
         <Page height="1000" width="1000" pageNumber={pageNumber} renderTextLayer={false} />
