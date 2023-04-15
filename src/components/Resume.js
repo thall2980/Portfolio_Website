@@ -21,12 +21,12 @@ const Resume = () => {
     setNumPages(1)
   }
   return (
-    <div classname="h-fit overflow-y-auto ">
-      <div style={{textAlign:'left'}}>
-      <a href={file} style={{fontSize: 40,}}><TfiSave/></a>
+    <div classname="">
+      <div style={{textAlign:'center'}}>
+      <a href={file} className="w-full text-5xl"><TfiSave/></a>
       </div>
       <Document file ={file} onLoadSuccess={onDocumentLoadSuccess}>
-        <Page  pageNumber={pageNumber} renderTextLayer={false} />
+        <Page   pageNumber={pageNumber} renderTextLayer={false} />
       </Document>
     </div>
   )
