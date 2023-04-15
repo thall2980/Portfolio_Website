@@ -10,7 +10,7 @@ import { Route, Routes } from "react-router-dom"
 function App() {
   return (
     <div >
-    <div className=" bg-cover bg-fixed bg-no-repeat text-gray-400 h-full"       style={{ backgroundImage: `url(${image})` }}>
+    <div className=" bg-cover bg-fixed bg-no-repeat text-gray-400 h-full pb-6"       style={{ backgroundImage: `url(${image})` }}>
       <NavBar/>
       <Routes>
         <Route path="/" element={<AboutMe />} />
