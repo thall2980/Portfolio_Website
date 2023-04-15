@@ -9,7 +9,8 @@ import { Route, Routes } from "react-router-dom"
 
 function App() {
   return (
-    <div className=" bg-cover bg-fixed bg-no-repeat text-gray-400"       style={{ backgroundImage: `url(${image})` }}>
+    <div >
+    <div className=" bg-cover bg-fixed bg-no-repeat text-gray-400 h-full"       style={{ backgroundImage: `url(${image})` }}>
       <NavBar/>
       <Routes>
         <Route path="/" element={<AboutMe />} />
@@ -17,6 +18,7 @@ function App() {
         <Route path="/resume" element={<Resume />} />
         <Route path="/skills" element={<Skills />} />
       </Routes>
+    </div>
     </div>
   );
 }
