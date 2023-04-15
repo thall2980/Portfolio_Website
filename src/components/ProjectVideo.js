@@ -2,13 +2,13 @@ import React from "react";
 
 const ProjectVideo = ({ props }) => {
   return (
-    <div className="project_container h-fit overflow-y-auto  p-10 mb-20 bg-blue-300 rounded 2xl:h-[60vh]">
-      <h1 className="project_title">{props.title}</h1>
+    <div className=" h-fit overflow-y-auto  p-10 mb-20 bg-blue-300 rounded 2xl:h-[60vh]">
+      <h1 className="text-center">{props.title}</h1>
       <div className="pt-10 justify-center lg:flex flex-row">
-        <div className="h-full lg:w-3/5">
+        <div className="h-full w-full lg:w-3/5">
 
             <iframe
-              className="min-w-full h-[30vh] lg:h-[40vh] "
+              className="w-full h-[30vh] lg:h-[40vh] mt-15 xl:mt-0 "
               // width="853"
               // height="480"
               src={`https://www.youtube.com/embed/${props.embedID}`}
