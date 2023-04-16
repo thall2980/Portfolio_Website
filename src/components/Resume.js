@@ -16,11 +16,14 @@ const Resume = () => {
     setNumPages(1);
   }
   return (
-    <div classname="h-full">
-      <div>
-        <a href={file} className="text-5xl">
-          <TfiSave />
+    <div classname="h-full w-full">
+      <div >
+        <p className="text-center">
+        <a href={file} className=" text-5xl">
+          Download File
         </a>
+        </p>
+        <br/>
       </div>
       <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
         <Page pageNumber={pageNumber} renderTextLayer={false} />
