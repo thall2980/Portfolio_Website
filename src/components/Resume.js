@@ -21,7 +21,7 @@ const Resume = () => {
     setNumPages(1)
   }
   return (
-    <div classname="">
+    <div classname="h-full">
       <div style={{textAlign:'center'}}>
       <a href={file} className="w-full text-5xl"><TfiSave/></a>
       </div>
