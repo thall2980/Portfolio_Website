@@ -35,6 +35,7 @@ const Resume = () => {
       monitorHeight
       refreshRate={128}
       refreshMode={"debounce"}
+
       render={({ size }) => (
         <div>
           <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
