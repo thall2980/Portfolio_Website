@@ -1,6 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import { SizeMe } from "react-sizeme";
+import {
+
+  useWindowWidth,
+
+} from '@react-hook/window-size'
 import { TfiSave } from "react-icons/tfi";
 // import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -16,6 +21,8 @@ const Resume = () => {
     setNumPages(numPage);
     setNumPages(1);
   }
+
+  const width = useWindowWidth();
   return (
     // <div classname="h-full w-full">
     //   <div>
@@ -31,25 +38,33 @@ const Resume = () => {
     //   </Document>
     // </div>
 
-    <SizeMe
-      monitorHeight
-      refreshRate={128}
-      refreshMode={"debounce"}
+    // <SizeMe
+    //   monitorHeight
+    //   refreshRate={128}
+    //   refreshMode={"debounce"}
 
-      render={({ size }) => (
-        <div>
-          <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
-            <div>
-              <Page
-                width={size.width}
-                pageNumber={pageNumber}
-                renderTextLayer={false}
-              />
-            </div>
-          </Document>
-        </div>
-      )}
+    //   render={({ size }) => (
+    //     <div>
+    //       <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
+    //         <div>
+    //           <Page
+    //             width={size.width}
+    //             pageNumber={pageNumber}
+    //             renderTextLayer={false}
+    //           />
+    //         </div>
+    //       </Document>
+    //     </div>
+    //   )}
+    // />
+
+    <Document className="ml-20" file={file} onLoadSuccess={onDocumentLoadSuccess}>
+    <Page pageNumber={pageNumber}
+    wrap={false}
+      width={Math.min(width * 0.9)} // width: 90vw; max-width: 400px
+      renderTextLayer={false}
     />
+  </Document>
   );
 };
 
