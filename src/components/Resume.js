@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { SizeMe } from 'react-sizeme'
 import { TfiSave } from "react-icons/tfi";
 // import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -16,19 +17,36 @@ const Resume = () => {
     setNumPages(1);
   }
   return (
-    <div classname="h-full w-full">
-      <div >
-        <p className="text-center">
-        <a href={file} className=" text-5xl">
-          Download File
-        </a>
-        </p>
-        <br/>
-      </div>
-      <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
-        <Page pageNumber={pageNumber} renderTextLayer={false} />
+    // <div classname="h-full w-full">
+    //   <div>
+    //     <p className="text-center">
+    //       <a href={file} className=" text-5xl">
+    //         PDF Viewer
+    //       </a>
+    //     </p>
+    //     <br />
+    //   </div>
+    //   <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
+    //     <Page pageNumber={pageNumber} renderTextLayer={false} />
+    //   </Document>
+    // </div>
+    <SizeMe
+  monitorHeight
+  refreshRate={128}
+  refreshMode={"debounce"}
+  render={({ size }) => (
+    <div>
+      <Document
+          file={file}
+          onLoadSuccess={onDocumentLoadSuccess}
+      >
+        <div >
+          <Page width={size.width} pageNumber={pageNumber} renderTextLayer={false} />
+        </div>
       </Document>
     </div>
+  )}
+/>
   );
 };
 
