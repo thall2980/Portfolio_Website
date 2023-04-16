@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { SizeMe } from 'react-sizeme'
+import { SizeMe } from "react-sizeme";
 import { TfiSave } from "react-icons/tfi";
 // import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -30,23 +30,25 @@ const Resume = () => {
     //     <Page pageNumber={pageNumber} renderTextLayer={false} />
     //   </Document>
     // </div>
+
     <SizeMe
-  monitorHeight
-  refreshRate={128}
-  refreshMode={"debounce"}
-  render={({ size }) => (
-    <div>
-      <Document
-          file={file}
-          onLoadSuccess={onDocumentLoadSuccess}
-      >
-        <div >
-          <Page width={size.width} pageNumber={pageNumber} renderTextLayer={false} />
+      monitorHeight
+      refreshRate={128}
+      refreshMode={"debounce"}
+      render={({ size }) => (
+        <div>
+          <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
+            <div>
+              <Page
+                width={size.width}
+                pageNumber={pageNumber}
+                renderTextLayer={false}
+              />
+            </div>
+          </Document>
         </div>
-      </Document>
-    </div>
-  )}
-/>
+      )}
+    />
   );
 };
 
