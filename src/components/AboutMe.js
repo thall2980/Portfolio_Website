@@ -5,16 +5,16 @@ const AboutMe = () => {
   return (
     <div
       // style={{ backgroundImage: `url(${image})` }}
-      className="flex flex-row px-20 pt-20 h-screen bg-cover bg-no-repeat"
+      className="h-screen h-fit overflow-y-auto xl:flex flex-row px-20 pt-20 "
     >
-      <div className="w-1/2">
-        <h1 className="text-7xl text-gray-400">Tyler Hall</h1>
-        <h2 className="pt-6 text-5xl text-gray-400">
+      <div className="flex flex-row  lg:flex flex-col w-full">
+        <h1 className="text-3xl text-gray-400 lg:text-7xl">Tyler Hall</h1>
+        <h2 className="pt-6 text-2xl  text-gray-400 lg:text-5xl">
           Full Stack Web Developer
         </h2>
       </div>
-      <div className="w-1/2">
-        <p className="mt-7 text-2xl text-center text-gray-400 ">
+      <div className=" xl:w-3/5">
+        <p className="mt-7  text-center text-gray-400 lg:text-2xl">
           Hello there! My name is Tyler Hall, and I am a Full Stack Web
           Developer based in Pittsburgh, PA. Before entering the tech world, I
           attended the University of Pittsburgh and earned a Bachelor of Science
@@ -29,7 +29,7 @@ const AboutMe = () => {
           and grow as a web developer.{" "}
         </p>
 
-        <p className="mt-7 text-2xl text-center text-gray-400 ">
+        <p className="mt-7 text-center text-gray-400 lg:text-2xl">
           Thank you for visiting my portfolio website, and please feel free to
           connect with me on LinkedIn or via email.
         </p>
