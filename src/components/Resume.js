@@ -58,7 +58,7 @@ const Resume = () => {
     //   )}
     // />
 
-    <Document className="ml-20" file={file} onLoadSuccess={onDocumentLoadSuccess}>
+    <Document classname=""file={file} onLoadSuccess={onDocumentLoadSuccess}>
     <Page pageNumber={pageNumber}
     wrap={false}
       width={Math.min(width * 0.9)} // width: 90vw; max-width: 400px
