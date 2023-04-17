@@ -57,11 +57,11 @@ const Resume = () => {
     //     </div>
     //   )}
     // />
-    <div className="flex justify-center ">
+    <div className="flex justify-center pt-8 h-full pb-[105%] md:pb-[35%] lg:pb-8">
     <Document file={file} onLoadSuccess={onDocumentLoadSuccess}>
     <Page pageNumber={pageNumber}
     wrap={false}
-      width={Math.min(width * 0.9)} // width: 90vw; max-width: 400px
+      width={Math.min(width * 0.8)} // width: 90vw; max-width: 400px
       renderTextLayer={false}
     />
   </Document>

@@ -3,7 +3,7 @@ import logos from "./logos";
 
 const Skills = () => {
   return (
-    <div className=" overflow-y-auto h-screen ">
+    <div className="pt-8 overflow-y-auto h-screen ">
       <div className="text-center text-5xl pb-20">Skills</div>
       <div className="logo_container">
         {logos.map((logo) => (

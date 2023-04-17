@@ -5,7 +5,7 @@ const AboutMe = () => {
   return (
     <div
       // style={{ backgroundImage: `url(${image})` }}
-      className="h-screen h-fit overflow-y-auto xl:flex flex-row px-20 pt-20 "
+      className="h-[100vh] h-fit overflow-y-auto xl:flex flex-row px-20 pt-20 "
     >
       <div className="flex flex-row  lg:flex flex-col w-full">
         <h1 className="text-3xl text-gray-400 lg:text-7xl">Tyler Hall</h1>
