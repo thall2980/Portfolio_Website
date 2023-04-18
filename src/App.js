@@ -10,7 +10,7 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div
-      className="bg-no-repeat bg-cover text-gray-400  w-full h-full"
+      className="bg-no-repeat bg-cover text-gray-400  w-full h-screen"
       style={{ backgroundImage: `url(${image})` }}
     >
       <NavBar />
