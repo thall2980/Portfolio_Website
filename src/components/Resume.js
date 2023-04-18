@@ -64,11 +64,11 @@ const Resume = () => {
       renderTextLayer={false}
     />
   </Document>
-      <p className="text-center">
+      {/* <p className="text-center">
           <a href={file} className=" text-5xl">
            PDF Viewer
          </a>
-       </p>
+       </p> */}
   </div>
   );
 };

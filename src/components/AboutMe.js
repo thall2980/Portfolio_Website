@@ -10,12 +10,12 @@ const AboutMe = () => {
       <div className="flex flex-row  lg:flex flex-col w-full">
         <h1 className="text-3xl text-gray-400 lg:text-7xl">Tyler Hall</h1>
         <h2 className="pt-6 text-2xl  text-gray-400 lg:text-5xl">
-          Full Stack Web Developer
+          Full Stack Developer
         </h2>
       </div>
       <div className=" xl:w-3/5">
         <p className="mt-7  text-center text-gray-400 lg:text-2xl">
-          Hello there! My name is Tyler Hall, and I am a Full Stack Web
+          Hello there! My name is Tyler Hall, and I am a Full Stack
           Developer based in Pittsburgh, PA. Before entering the tech world, I
           attended the University of Pittsburgh and earned a Bachelor of Science
           degree in Biological Sciences. I also worked as a Patient Care
