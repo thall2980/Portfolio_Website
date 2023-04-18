@@ -37,7 +37,12 @@
   }
 } */
 
-
+.App-logo {
+  height: 10vmin;
+  width: 10vmin;
+  text-align: center;
+  pointer-events: none;
+}
 
 .video-responsive {
   overflow: hidden;
@@ -58,7 +63,6 @@
   padding-left: 10%;
   padding-right: 10%;
 }
-
 
 .title_video_container {
   width: 60%;
@@ -83,25 +87,20 @@
   max-width: 40%;
 }
 
-
 .react-pdf__Page__canvas {
   /* margin: 0 auto;
   width: 65vw !important;
   height: 100vh !important; */
 }
 
-
-
 .logo {
   width: 225px;
   height: 225px;
   padding: 75px;
-
 }
 
-.logo_title_container{
+.logo_title_container {
   text-align: center;
-
 }
 
 .logo_container {
@@ -111,6 +110,4 @@
   justify-content: center;
   padding-left: 10%;
   padding-right: 10%;
-
 }
-
