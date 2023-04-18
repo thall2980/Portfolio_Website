@@ -42,7 +42,7 @@ const Skills = () => {
         </div>
         <div className="flex items-center flex-col">
         <SiRubyonrails className="App-logo" />
-          <p className="text-center">Ruby on Rails</p>
+          <p className="text-center">Rails</p>
         </div>
         <div className="flex items-center flex-col">
         <SiSqlite className="App-logo" />
