@@ -2,8 +2,8 @@ import React from "react";
 
 const ProjectVideo = ({ props }) => {
   return (
-    <div className=" h-fit overflow-y-auto  p-10 mb-20 bg-blue-300 rounded 2xl:h-[60vh]">
-      <h1 className="text-center">{props.title}</h1>
+    <div className=" h-fit overflow-y-auto  p-10 mb-20 bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-orange-100 via-orange-300 to-red-100 text-stone-500 shadow-2xl rounded-3xl 2xl:h-[60vh]">
+      <h1 className="text-center font-bold text-3xl md:text-4xl">{props.title}</h1>
       <div className="pt-10 justify-center lg:flex flex-row">
         <div className="h-full w-full lg:w-3/5">
 

@@ -59,9 +59,11 @@ console.log(embedIDs);
 
 const Projects = () => {
   return (
-    <div className="bg-slate-950 pt-8">
+    <div className="bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-blue-100 via-blue-300 to-blue-500 text-stone-500 pt-8 ">
       <h1 className="text-center text-5xl pb-20">Projects</h1>
-      <div className="projects_container overflow-y-auto ">{videoComponent}</div>
+      <div className="projects_container overflow-y-auto ">
+        {videoComponent}
+      </div>
     </div>
   );
 };

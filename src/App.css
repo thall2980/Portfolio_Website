@@ -44,6 +44,10 @@
   pointer-events: none;
 }
 
+.font-link {
+  font-family: 'Didact Gothic', sans-serif;
+}
+
 .video-responsive {
   overflow: hidden;
   padding-bottom: 56.25%;
