@@ -8,7 +8,7 @@ const ProjectVideo = ({ props }) => {
         <div className="h-full w-full lg:w-3/5">
 
             <iframe
-              className="w-full h-[30vh] lg:h-[40vh] mt-15 xl:mt-0 "
+              className="w-full h-[30vh] mb-8 lg:h-[40vh] mt-15 xl:mt-0 "
               // width="853"
               // height="480"
               src={`https://www.youtube.com/embed/${props.embedID}`}
